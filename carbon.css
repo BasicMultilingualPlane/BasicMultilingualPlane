@@ -1,0 +1,30 @@
+#carbonads {
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#carbonads .carbon-text {
+    color: #201e1c;
+    margin: 5px;
+    margin-left: 15px
+}
+
+#carbonads .carbon-poweredby {
+    font-size: 8px;
+    color: #00b9ca;
+}
+
+#carbonads a {
+    font-size: 10px!important;
+}
+}
+@media only screen and (max-width: 700px) {
+    #carbonads .carbon-text {
+        display: none;
+    }
+    
+    #carbonads .carbon-poweredby {
+        display: none;
+    }
+}

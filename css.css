@@ -1,0 +1,946 @@
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+ol {
+    padding: 0 0 0 20px;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal;
+}
+/* to preserve line-height and selector appearance */
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+/*to enable resizing for IE*/
+
+input,
+textarea,
+select {
+    *font-size: 100%;
+}
+/*because legend doesn't inherit in IE */
+
+legend {
+    color: #000;
+}
+
+body {
+    padding-top: 80px;
+    font-family: Segoe UI, Trebuchet MS, Helvetica, Arial;
+    font-size: 14px;
+    background: url(img/spatter.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+dt,
+.font {
+    position: relative;
+    font-family: 'Days One', san-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 165%;
+}
+
+h3 {
+    float: left;
+    margin-bottom: 10px;
+    padding: 4px 9px;
+    font-size: 135%;
+    color: #fff;
+    text-decoration: none;
+    background: url("img/header-bk.png");
+    border-radius: 5px;
+    border: 1px solid #226AB3;
+    border-bottom: 1px solid #003474;
+    box-shadow: 0px 1px 3px -2px #000;
+    -ms-box-shadow: 0px 1px 3px -2px #000;
+    -moz-box-shadow: 0px 1px 3px -2px #000;
+    -webkit-box-shadow: 0px 1px 3px -2px #000;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+code {
+    padding: 0 2px 1px;
+    border: 1px solid;
+    border-color: #dfdfdf #dadada #d0d0d0;
+    font-size: 80%;
+    border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+pre code {
+    padding: 0 1em 1em;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+p code {
+    position: relative;
+    top: -1px;
+    margin: 0 2px;
+    background: linear-gradient(top, #fafafa, #efefef);
+    background: -ms-linear-gradient(top, #fafafa, #efefef);
+    background: -moz-linear-gradient(top, #fafafa, #efefef);
+    background: -webkit-linear-gradient(top, #fafafa, #efefef);
+}
+
+h4 {
+    margin: 14px 0 4px;
+}
+
+h4 code {
+    padding: 0 3px;
+    background: url("img/header-bk.png") left -10px;
+    border: 1px solid #226AB3;
+    border-bottom: 1px solid #003474;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 90%;
+}
+
+h4 span {
+    padding-left: 6px;
+    font-family: Segoe UI, Trebuchet MS, Helvetica, Arial;
+    font-style: italic;
+}
+
+button code {
+    position: relative;
+    top: -1px;
+    background: #fff;
+}
+
+body > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 46px;
+    width: 100%;
+    border-top: 1px solid #003576;
+    border-bottom: 2px solid #003474;
+    background: url(img/header-bk.png);
+    box-shadow: 0 1px 4px -2px #000;
+    -ms-box-shadow: 0 1px 4px -2px #000;
+    -moz-box-shadow: 0 1px 4px -2px #000;
+    -webkit-box-shadow: 0 1px 4px -2px #000;
+    opacity: 0.95;
+    z-index: 2;
+}
+
+body > header > iframe,
+body > header > a {
+    float: right;
+    margin-top: 13px;
+}
+
+.anchor-id {
+    position: absolute;
+    top: -75px;
+    left: 0px;
+}
+
+.font {
+    color: #555;
+    font-size: 90%;
+}
+
+#logo {
+    float: left;
+    margin-left: 8px;
+    font-family: 'Righteous';
+    font-size: 275%;
+    color: #F3F3F3;
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 52, 116, 0.7);
+}
+
+#logo span {
+    position: relative;
+    top: -6px;
+    font-size: 90%;
+    margin: 0 2px;
+}
+
+#global_menu {
+    position: relative;
+    float: right;
+    padding: 16px 20px 22px 20px;
+}
+
+#global_menu > a {
+    display: block;
+    margin-left: 18px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 0;
+}
+
+#global_menu > a:first-child {
+    margin-left: 0;
+}
+
+#global_menu > a div {
+    position: relative;
+}
+
+#global_menu > a div:last-child {
+    top: 8px;
+}
+
+#global_nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 175px;
+    background: #fff;
+    border: 1px solid;
+    border-color: #0E56A9;
+    border-radius: 3px;
+    -ms-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 1px 7px -2px #000;
+    -ms-box-shadow: 0 1px 7px -2px #000;
+    -moz-box-shadow: 0 1px 7px -2px #000;
+    -webkit-box-shadow: 0 1px 7px -2px #000;
+}
+
+#global_nav.small-nav {
+    width: 90px;
+}
+
+#global_nav a {
+    display: block;
+    padding: 0 8px 6px;
+    text-decoration: none;
+    color: #466EA6;
+    font-weight: bold;
+}
+
+#global_nav a:hover {
+    text-decoration: underline;
+}
+
+#global_menu:hover #global_nav {
+    display: block;
+}
+
+.max-width {
+    width: 90%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+div.max-width > dl {
+    margin-bottom: 40px;
+    padding: 12px 10px;
+    background: #fff;
+    border: 1px solid;
+    border-color: #bbb #ccc #ddd;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    clear: both;
+}
+
+div.max-width > dl dt {
+    font-size: 120%;
+    background: linear-gradient(top, #F3F3F3, #E6E6E6);
+    background: -ms-linear-gradient(top, #F3F3F3, #E6E6E6);
+    background: -moz-linear-gradient(top, #F3F3F3, #E6E6E6);
+    background: -webkit-linear-gradient(top, #F3F3F3, #E6E6E6);
+    border: 1px solid;
+    border-color: #E6E6E6 #dadada #d0d0d0;
+    margin-bottom: 8px;
+    padding: 2px 6px;
+    text-shadow: 0 1px 0 #fff;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div.max-width > dl dd {
+    margin: 0 10px 20px;
+}
+
+div.max-width > dl dd ol {
+    margin: 0 15px 10px;
+    padding: 6px 6px 6px 26px;
+    background: #fafafa;
+    border: 1px solid #eee;
+}
+
+div.max-width > dl > dd:last-child p:last-child {
+    margin-bottom: 0px;
+}
+
+#tag_line {
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    color: #ccc;
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#tag_line:before,
+#tag_line:after {
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 66px;
+    margin-left: -33px;
+    border-bottom: 8px dotted #fff;
+}
+
+#tag_line:after {
+    margin-top: -1px;
+    border-bottom-color: #ddd;
+}
+
+#browser_logos {
+    display: table;
+    width: 100%;
+    margin: 20px auto
+}
+
+#browser_logos a {
+    display: table-cell;
+    width: 20%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #466EA6;
+}
+
+#browser_logos a img {
+    display: block;
+    width: 75%;
+    max-width: 61px;
+    margin: 0 auto;
+}
+
+#browser_logos a span {
+    display: block;
+    font-size: 10px;
+    color: #999;
+}
+
+#doc_list dd {
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #bbb;
+}
+
+#doc_list dd:last-child {
+    border-bottom: none;
+}
+
+input,
+select,
+textarea {
+    width: 400px
+}
+
+body {
+    overflow-x: hidden
+}
+
+.zopt {
+    width: 150px
+}
+
+#shareme {
+    width: 350px;
+    height: 60px;
+}
+
+#shareme .box {
+    float: left;
+    margin: 5% 8% 0 8%;
+    width: 100%;
+}
+
+#shareme .box a {
+    color: #404040
+}
+
+#shareme .box a:hover {
+    text-decoration: none
+}
+
+#shareme .count {
+    font-weight: bold;
+    font-size: 20px;
+    border-right: 2px solid #57b8d1;
+    line-height: 15px;
+    padding-right: 10px;
+}
+
+#shareme .share {
+    margin-left: 10px;
+    font-size: 22px;
+    width: 250px;
+}
+
+#shareme .buttons {
+    position: absolute;
+    width: 320px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 10px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+#shareme .button {
+    float: left;
+    max-width: 50px;
+    margin: 0 10px 0 0;
+}
+
+#shareme .facebook {
+    margin: 0 8px 0 0
+}
+
+#shareme .twitter {
+    margin: 0 18px 0 0
+}
+
+#shareme .linkedin {
+    margin: 0 20px 0 0
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        margin: -40% auto
+    }
+    60% {
+        margin: 6% auto
+    }
+    80% {
+        margin: 3% auto
+    }
+    100% {
+        margin: 5% auto
+    }
+}
+
+#github {
+    right: -65px;
+    height: 30px;
+    top: 40px;
+    position: absolute;
+    text-decoration: none;
+    width: 250px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-family: 'Maven Pro', Verdana, Arial;
+    color: white;
+    z-index: 9000
+}
+
+#github span {
+    background: #000;
+    font-size: 14px;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    -moz-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#github span:last-child {
+    background: #0066cc;
+    color: #000;
+    opacity: 0;
+}
+
+#github:hover span:first-child {
+    opacity: 0
+}
+
+#github:hover span:last-child {
+    opacity: 1
+}
+
+@media all and (-webkit-transform-3d) {
+    #github span {
+        opacity: 1 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 1s;
+    }
+    #github span:last-child {
+        -webkit-transform: rotateX(180deg)
+    }
+    #github:hover span:first-child {
+        -webkit-transform: rotateX(180deg)
+    }
+    #github:hover span:last-child {
+        -webkit-transform: rotateX(360deg)
+    }
+}
+
+details,
+summary {
+    display: block;
+    border: 1px solid #666;
+    padding: 1em;
+}
+/* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
+/* These styles can be applied regardless of whether the fallback is needed */
+
+summary {
+    cursor: pointer;
+}
+
+summary:hover,
+summary:focus {
+    background: #ddd;
+}
+/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+
+.no-details details > * {
+    display: none;
+}
+/* This doesn’t work very well in Firefox 3.6.x */
+/* .no-details details[open] > * { display: block; } */
+/* The following doesn’t toggle correctly in WebKit:
+			.no-details details > summary:before { content: '► '; }
+			.no-details details[open] > summary:before { content: '▼ '; }
+			*/
+/* And yes, it should really be ::before, but that doesn’t work in IE8 */
+
+.no-details details > summary:before {
+    float: left;
+    width: 20px;
+    content: '► ';
+}
+
+.no-details details.open > summary:before {
+    content: '▼ ';
+}
+/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+/* I really couldn’t be bothered though. */
+/*
+			.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+			.no-details details.open > summary { background-position: 0 -20px; }
+			*/
+/* Make sure summary remains visible */
+
+.no-details details summary {
+    display: block;
+}
+/* Skin CSS */
+
+.socialcount {
+    color: #fff;
+    font-size: .875em;
+    line-height: 2.2em;
+}
+
+.socialcount > li {
+    background-color: #999;
+}
+
+.socialcount > li,
+.socialcount > li > a:focus,
+.socialcount .loading {
+    border-radius: 5px;
+}
+
+.socialcount > li > a:focus,
+.socialcount > li:hover,
+.socialcount > li.hover
+/* fix for IE and iframes */
+
+{
+    background-color: #464646;
+}
+/* Special class added to count when it's >= the minimum */
+
+.socialcount .count.minimum {}
+/* Base CSS */
+
+.socialcount {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 .6em 0;
+    overflow: hidden;
+}
+
+.socialcount-large {
+    line-height: normal;
+}
+
+.socialcount:link,
+.socialcount:visited {
+    color: inherit;
+}
+
+.socialcount > li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    position: relative;
+    vertical-align: top;
+    min-width: 80px;
+    min-height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    *margin-right: 4px;
+}
+
+.socialcount-small > li {
+    min-width: 0;
+}
+
+.socialcount-large > li {
+    float: left;
+    margin: 0 .6em .6em 0;
+}
+
+.socialcount.recommend .facebook {
+    min-width: 120px;
+}
+
+.socialcount-small.recommend .facebook {
+    min-width: 0;
+}
+
+.socialcount-large > li,
+.socialcount-large.recommend .facebook {
+    min-width: 105px;
+}
+
+.socialcount > li > a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.socialcount-small > li > a {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.socialcount-large > li > a {
+    padding: 12px 5px 8px;
+}
+
+.socialcount .count {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    text-align: center;
+    margin-left: 6px;
+}
+
+.socialcount-large .count {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 10px;
+}
+
+.socialcount-small .count {
+    margin-left: 0;
+}
+
+.socialcount .facebook iframe {
+    height: 21px;
+    width: 90px;
+    /* recommend */
+}
+
+.socialcount.de_DE .facebook iframe {
+    width: 78px;
+    /* recommend */
+}
+
+.socialcount.like .facebook iframe {
+    width: 48px;
+    /* like */
+}
+
+.socialcount.like.de_DE .facebook iframe {
+    width: 75px;
+    /* like */
+}
+
+.socialcount .button {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.socialcount .button iframe {
+    pointer-events: auto;
+}
+
+.socialcount-large .button {
+    top: auto;
+    bottom: 2px;
+}
+
+.socialcount.grade-a.activate-on-hover > li.hover .count,
+.socialcount.grade-a.activate-on-click > li.hover.active .count {
+    text-indent: -999px;
+}
+
+.socialcount.grade-a.activate-on-hover > li.hover .button,
+.socialcount.grade-a.activate-on-click > li.hover.active .button {
+    display: block;
+}
+
+.socialcount.grade-a.activate-on-hover > li.hover > a,
+.socialcount.grade-a.activate-on-click > li.hover.active > a {
+    cursor: default;
+}
+
+.socialcount-small.grade-a.activate-on-hover > li.hover > a,
+.socialcount-small.grade-a.activate-on-click > li.hover.active > a,
+.socialcount.grade-a.activate-on-hover > li.hover .button iframe,
+.socialcount.grade-a.activate-on-click > li.hover.active .button iframe {
+    cursor: pointer;
+}
+/* Inline loading */
+
+.socialcount .loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #aaa;
+    background-color: rgba(170, 170, 170, 0.7);
+    color: #000;
+    text-transform: uppercase;
+    font-size: .75em;
+    text-align: center;
+}
+
+.socialcount-large .loading {
+    padding-top: 30%;
+}
+
+.socialcount .loading .dot {
+    display: inline-block;
+    /* no ie7 compat needed here, just shows the text links */
+    
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    background: #fff;
+    opacity: 0;
+    border-radius: 50%;
+    -webkit-animation: socialCountLoadingFade .6s infinite;
+    -moz-animation: socialCountLoadingFade .6s infinite;
+    animation: socialCountLoadingFade .6s infinite;
+}
+
+.socialcount .loading .dot:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.socialcount .loading .dot:nth-child(2) {
+    -webkit-animation-delay: .05s;
+    -moz-animation-delay: .05s;
+    animation-delay: .05s;
+}
+
+.socialcount .loading .dot:nth-child(3) {
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+@-webkit-keyframes socialCountLoadingFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes socialCountLoadingFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes socialCountLoadingFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
