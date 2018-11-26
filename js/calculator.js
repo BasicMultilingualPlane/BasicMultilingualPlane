@@ -1,13 +1,13 @@
 function encode(){ 
-  if(document.forms[2].ascii.value != ''){ 
-     var vText = document.forms[2].ascii.value; 
-     document.forms[2].hex.value = convertToHex(vText); 
+  if(document.forms[1].ascii.value != ''){ 
+     var vText = document.forms[1].ascii.value; 
+     document.forms[1].hex.value = convertToHex(vText); 
          var vEncoded = convertToUnicode(vText); 
-     document.forms[2].unicode.value = vEncoded; 
+     document.forms[1].unicode.value = vEncoded; 
          document.getElementById("unicodeHTML").innerHTML = vEncoded;
- 	document.forms[2].ascii.focus();
-	document.forms[2].ascii.blur();
-	document.forms[2].ascii.select();
+ 	document.forms[1].ascii.focus();
+	document.forms[1].ascii.blur();
+	document.forms[1].ascii.select();
   } 
 } 
 
